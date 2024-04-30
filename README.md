@@ -4,6 +4,9 @@
     -Configured tailwind css
     -Header
     -Login Form
+    -sign up form
+    -Form validation
+    -useRef Hook
 
 # Features
 
