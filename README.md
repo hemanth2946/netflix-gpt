@@ -4,9 +4,18 @@
     -Configured tailwind css
     -Header
     -Login Form
-    -sign up form
+    -Sign up form
     -Form validation
     -useRef Hook
+    -Firebase setup
+    -Depoly app to production in firebase
+    -Create Singnup user account.
+    -Implemet sigin user api 
+    -Created redux store with user slice
+    -Implmented signout
+    -Update Profile
+    -Fetch movies from Tmdb
+
 
 # Features
 
