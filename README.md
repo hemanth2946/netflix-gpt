@@ -15,6 +15,11 @@
     -Implmented signout
     -Update Profile
     -Fetch movies from Tmdb
+    -unsubcribe to the onAuthStatechange callback
+    -Add hardcoded values to constants 
+    -Registerd for TMBA website and create app & get access token
+    -get data from TMBA API & create an app & get access token. 
+    -react strictmode
 
 
 # Features
