@@ -20,6 +20,13 @@
     -Registerd for TMBA website and create app & get access token
     -get data from TMBA API & create an app & get access token. 
     -react strictmode
+    -custom hook for now playing movies
+    -create movieslice
+    -update store with movie data
+    -planning for maincontainer & scondary container
+    -fetch data for trailer video
+    -update store trailer video data
+    -Embeded the yputube video and make it autoplay on mute
 
 
 # Features
