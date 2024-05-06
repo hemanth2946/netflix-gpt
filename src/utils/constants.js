@@ -11,3 +11,12 @@ export const API_OPTIONS = {
         Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4Y2FiYWM2MGI1NmQ5NDE2NTg4NTU3YTAxNTE1MWVlMSIsInN1YiI6IjY2MzNjN2U0OTU5MGUzMDEyM2JhZGY1NiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.0pTo2Z5cbziqVHbZthAHUQgf6CRxCHWDErTNW_ZeX88'
     }
 };
+
+export const CDN_IMAGE_URL = "https://image.tmdb.org/t/p/w500/"
+
+export const SUPPORTED_LANGUAGES = [
+    { identifier: "en", name: "English" },
+    { identifier: "hindi", name: "Hindi" },
+    { identifier: "spanish", name: "Spanish" },
+    { identifier: "telugu", name: "Telugu" },
+]

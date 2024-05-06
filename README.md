@@ -27,6 +27,11 @@
     -fetch data for trailer video
     -update store trailer video data
     -Embeded the yputube video and make it autoplay on mute
+    -Build secondary component
+    -Movie list
+    -Movie card
+    -TMDB image CDN url
+    
 
 
 # Features
