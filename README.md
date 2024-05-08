@@ -31,6 +31,9 @@
     -Movie list
     -Movie card
     -TMDB image CDN url
+    -Gpt seach page and search bar
+    -Multipla language support
+    -Integrate Gpt Api
     
 
 
