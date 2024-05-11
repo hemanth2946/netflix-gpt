@@ -34,6 +34,7 @@
     -Gpt seach page and search bar
     -Multipla language support
     -Integrate Gpt Api
+    -Memoization
     
 
 

@@ -1,10 +1,12 @@
 import { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addTrailerId } from "../utils/moviesSlice";
 import { API_OPTIONS } from "../utils/constants";
 
 const useMovieTrailer = (movieId) => {
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
+    const trailerId = useSelector((store) => store.movies.trailerId);
+
     const getMovieVideos = async () => {
         const res = await fetch(`https://api.themoviedb.org/3/movie/${movieId}/videos?language=en-US`, API_OPTIONS);
         const jsonRes = await res.json();
@@ -13,7 +15,9 @@ const useMovieTrailer = (movieId) => {
         dispatch(addTrailerId(trailer.key))
     }
     useEffect(() => {
-        getMovieVideos();
+        // using memoization , when upCommingMovies are null in store,
+        //  then only call function, if data is present dont call
+        !trailerId && getMovieVideos();
     }, [])
 }
 
