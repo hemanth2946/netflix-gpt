@@ -35,8 +35,7 @@
     -Multipla language support
     -Integrate Gpt Api
     -Memoization
-    
-
+    -Responsive Web Design    
 
 # Features
 
