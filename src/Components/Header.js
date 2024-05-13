@@ -52,18 +52,19 @@ export const Header = () => {
     }
 
     return (
-        <div className='absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between' >
-            <img className='w-44' src={LOGO} alt='Logo' />
-            {user &&
+        <div className='fixed w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between' >
+            <img className='w-44 mx-auto md:mx-0' src={LOGO} alt='Logo' />
+            {
+                user &&
                 <div className='flex m-4'>
                     {showGptSearch && <select className='p-2 m-2 rounded-lg bg-gray-500 text-white' onChange={handleLanguageChange}>
                         {SUPPORTED_LANGUAGES.map((item) => <option key={item.identifier} value={item.identifier} name={item.name} >{item.name} </option>)}
                     </select>}
                     <button className='no-wrap font-bold bg-green-500 text-white py-2 my-2 mx-2 px-2 rounded-lg w-full' onClick={handleGptSearch}>{!showGptSearch ? "Gpt Search" : "Home"} </button>
-                    <img className='w-10 rounded-lg' alt='user-logo' src={user?.photoURL} />
                     <button className=' no-wrap font-bold p-2 m-2 bg-red-500 text-white w-full rounded-lg ' onClick={handleSignOut}>Sign out</button>
+                    <img className='hidden md:block w-10 rounded-lg' alt='user-logo' src={user?.photoURL} />
                 </div>
             }
-        </div>
+        </div >
     )
 }

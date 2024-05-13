@@ -82,18 +82,18 @@ const Login = () => {
     return (
         <div>
             <Header />
-            <div className='absolute'>
-                <img src={BACKGROUND_IMG} alt='Background' />
+            <div className='absolute w-full'>
+                <img className='h-screen md:h-full object-cover md:w-screen' src={BACKGROUND_IMG} alt='Background' />
             </div>
-            <form onSubmit={handleFormSubmit} className='w-3/12 p-12 bg-black absolute my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80 '>
-                <h1 className='font-bold text-3xl py-4'>{isSignInForm ? "Sign In" : "Sign Up"}</h1>
-                {!isSignInForm && <input ref={nameRef} type='text' placeholder='Name' className='p-4 my-2 w-full bg-gray-800' />}
-                <input ref={emailRef} type='text' placeholder='Email Address' className='p-4 my-2 w-full bg-gray-800' />
-                <input ref={passwordRef} type='password' placeholder='Password' className='p-4 my-2 w-full bg-gray-800' />
-                {!isSignInForm && <input ref={confirmPasswordRef} type='password' placeholder='Confirm Password' className='p-4 my-2 w-full bg-gray-800' />}
+            <form onSubmit={handleFormSubmit} className='w-full m-2 md:w-3/12 p-12 bg-black absolute my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80 '>
+                <h1 className='font-bold text-lg md:text-3xl py-1 md:py-4'>{isSignInForm ? "Sign In" : "Sign Up"}</h1>
+                {!isSignInForm && <input ref={nameRef} type='text' placeholder='Name' className='p-2 my-2 md:p-4 md:my-2 w-full bg-gray-800' />}
+                <input ref={emailRef} type='text' placeholder='Email Address' className='p-2 my-2 md:p-4 md:my-2  w-full bg-gray-800' />
+                <input ref={passwordRef} type='password' placeholder='Password' className='p-2 my-2 md:p-4 md:my-2 w-full bg-gray-800' />
+                {!isSignInForm && <input ref={confirmPasswordRef} type='password' placeholder='Confirm Password' className='p-2 my-2 md:p-4 md:my-2 w-full bg-gray-800' />}
                 <p className='text-red-500 font-bold text-lg py-2'>{errorMessage}</p>
-                <button className='p-4 my-4 bg-red-700 w-full rounded-lg ' >{isSignInForm ? "Sign In" : "Sign Up"}</button>
-                <p className='py-6 cursor-pointer' onClick={handleSignInForm}>  {isSignInForm ? "New to Netflix?   Sign Up Now" : "Alredy have an Account?   Sign In Now"}</p>
+                <button className=' p-2 my-1 md:p-4 md:my-4 bg-red-700 w-full rounded-lg ' >{isSignInForm ? "Sign In" : "Sign Up"}</button>
+                <p className='py:4 md:py-6 cursor-pointer' onClick={handleSignInForm}>  {isSignInForm ? "New to Netflix?   Sign Up Now" : "Alredy have an Account?   Sign In Now"}</p>
             </form>
         </div>
     )
